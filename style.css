@@ -1,0 +1,107 @@
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+:root {
+    --wca1: #300255;
+    --wca2: #ff5b20;
+
+}
+
+/* ------ Navbar Secyion ------ */
+
+.wca-nav-logo {
+    height: 4rem;
+}
+
+.navbarfontstyling {
+    font-weight: 800;
+    color: var(--wca1);
+    transition: 0.3s ease-in-out;
+}
+
+.navbarfontstyling:hover {
+    color: var(--wca2);
+}
+
+/* ------ Home Section ------ */
+.home-bg {
+    background: url(./images/Banner03.webp) no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 100vh;
+}
+
+.hero-padding {
+    padding: 30px 0;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 900;
+    word-spacing: 5px;
+    color: var(--wca2);
+    text-shadow: var(--wca1) 2px 2px;
+    transition: 0.2s ease-in-out;
+}
+
+.hero-title:hover {
+    font-size: 4rem;
+    font-weight: 900;
+    word-spacing: 5px;
+    color: var(--wca1);
+    text-shadow: white 2px 2px 100px;
+}
+
+.hero-subtitle {
+    font-family: "Poppins";
+    font-size: 1.2rem;
+    font-weight: 700;
+    word-spacing: 5px;
+    color: white;
+    text-shadow: var(--wca1) 2px 2px;
+    transition: 0.3s ease-in-out;
+}
+
+.hero-subtitle:hover {
+    font-family: "Poppins";
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--wca1);
+    text-shadow: var(--wca2) 1px 1px;
+}
+
+.cta-btn {
+    background: var(--wca1);
+    color: white;
+    font-weight: 700;
+    text-shadow: var(--wca2) 1px 1px;
+    transition: 0.3s ease-in-out;
+}
+
+.cta-btn:hover {
+    background: var(--wca2);
+    color: white;
+    font-weight: 700;
+}
+
+@media (max-width: 1024px) {
+    .hero-wrapper {
+        margin: auto;
+    }    
+
+    .navbarfontstyling {
+        font-size: small;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero-padding {
+        padding-top: 100px;
+    }
+
+    .hero-wrapper {
+        margin: auto;
+    }
+
+}
