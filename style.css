@@ -127,6 +127,10 @@
         height: 2.7rem;
     }
 
+    .hero-padding {
+        padding: 0 0;
+    }
+
     .hero-title {
         font-size: 2rem;
         transition: 0.2s ease-in-out;
@@ -154,6 +158,10 @@
 @media (max-width: 376px) {
     .top-left, .top-right {
         font-size: 0.8rem;
+    }
+
+    .hero-padding {
+        padding: 0 0;
     }
 
     .hero-title {
