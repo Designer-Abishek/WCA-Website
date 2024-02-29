@@ -23,6 +23,10 @@
     height: 4rem;
 }
 
+.nav-toggle-border-removing {
+    border: 0 !important;
+}
+
 .navbarfontstyling {
     font-size: medium;
     font-weight: 800;
