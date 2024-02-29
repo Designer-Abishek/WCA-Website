@@ -110,10 +110,77 @@
 
 /* ------ Media Queries ------ */
 
-@media (max-width: 992px) {
+@media (max-width: 360px) {
+    .col-8 {
+        width: 100% !important;
+    }
     .top-right {
         display: none;
     }
+
+    .top-left {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .wca-nav-logo {
+        height: 2.7rem;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+        transition: 0.2s ease-in-out;
+    }
+    
+    .hero-title:hover {
+        font-size: 2.1rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .hero-subtitle:hover {
+        font-size: 1.1rem;
+    }
+    
+    .cta-btn {
+        font-size: 0.7rem;
+        transition: 0.3s ease-in-out;
+    }
+}
+
+@media (max-width: 376px) {
+    .top-left, .top-right {
+        font-size: 0.8rem;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+        transition: 0.2s ease-in-out;
+    }
+    
+    .hero-title:hover {
+        font-size: 2.6rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.5rem;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .hero-subtitle:hover {
+        font-size: 1.6rem;
+    }
+    
+    .cta-btn {
+        font-size: 1rem;
+        transition: 0.3s ease-in-out;
+    }
+}
+
+@media (max-width: 992px) {
 
     .top-center {
         display: none;
@@ -121,7 +188,6 @@
 
     .top-left {
         display: inline-block;
-        text-align: center;
     }
 }
 
