@@ -7,9 +7,11 @@
     --wca2: #ff5b20;
 
 }
-
 .top-contact-bar {
     background: linear-gradient(to left, var(--wca1), var(--wca2));
+}
+
+.top-contact-bar-inner {
     font-size: 1rem;
     font-weight: 600;
 
@@ -119,6 +121,7 @@
     }
 }
 
+
 @media (max-width: 1024px) {
     .hero-wrapper {
         margin: auto;
@@ -138,4 +141,10 @@
         margin: auto;
     }
 
+}
+
+@media (max-width: 1200px) {
+    .top-center {
+        font-size: 0.8rem;
+    }
 }
