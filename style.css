@@ -156,16 +156,19 @@
 
 @media (max-width: 360px) {
 
-    .col-8 {
-        width: 100% !important;
+    .top-right a i {
+        transition: none;
+    }
+    .top-right {
+        visibility: hidden;
     }
 
     .col-4 {
         width: 0 !important;
     }
 
-    .top-right {
-        visibility: hidden;
+    .col-8 {
+        width: 100% !important;
     }
 
     .top-left {
