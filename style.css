@@ -47,10 +47,13 @@
 }
 
 /* ------ Quote Scroling ------ */
-.infinite-quote-scrolling {
+.quote-font-styling {
     font-size: small;
     font-weight: 600;
     white-space: nowrap;
+}
+
+.infinite-quote-scrolling {
     transform: translateX(0px);
     animation: linear 25s infinite none quote-scrolling;
 }
@@ -132,7 +135,7 @@
 }
 
 .hero-subtitle {
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     font-size: 1.2rem;
     font-weight: 700;
     word-spacing: 5px;
@@ -164,14 +167,14 @@
 
 /* ------ 2nd Section ------ */
 .wrapper {
-    background: linear-gradient(to right, var(--wca1), var(--wca2));
+    background: linear-gradient(to left, var(--wca1), var(--wca2));
     border-radius: 2rem;
     padding: 0 2rem;
     box-shadow: 50px black inset;
 }
 
 .wrapper:hover {
-    background: linear-gradient(to left, var(--wca1), var(--wca2));
+    background: linear-gradient(to right, var(--wca1), var(--wca2));
     transition: 1s ease-in-out;
     scale: 105%;
 }
@@ -190,6 +193,89 @@
     color: white;
 }
 
+/* ------ 3rd Section ------ */
+
+.aoow-h1 {
+    background: linear-gradient(to left, var(--wca1), var(--wca2));
+    color: white;
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+
+.aoow-img {
+    height: 50vh;
+    border-radius: 1.5rem;
+}
+
+.scroller__inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.quotes-height {
+    height: 20px;
+}
+
+.scroller[data-animated="true"] {
+    overflow: hidden;
+    -webkit-mask: linear-gradient(90deg,
+            transparent,
+            white 20%,
+            white 80%,
+            transparent);
+    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.scroller[data-animated="true"] .scroller__inner {
+    width: max-content;
+    flex-wrap: nowrap;
+    animation: scroll var(--_animation-duration, 40s) var(--_animation-direction, forwards) linear infinite;
+}
+
+.scroller[data-direction="right"] {
+    --_animation-direction: reverse;
+}
+
+.scroller[data-direction="left"] {
+    --_animation-direction: forwards;
+}
+
+.scroller[data-speed="fast"] {
+    --_animation-duration: 20s;
+}
+
+.scroller[data-speed="medium"] {
+    --_animation-duration: 40s;
+}
+
+.scroller[data-speed="slow"] {
+    --_animation-duration: 60s;
+}
+
+@keyframes scroll {
+    to {
+        transform: translate(calc(-50% - 0.5rem));
+    }
+}
+
+/* .infinite-image-scrolling {
+    white-space: nowrap;
+    transform: translateX(0px);
+    animation: linear 10s infinite image-scrolling;
+}
+
+@keyframes image-scrolling {
+   0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+} */
+
 /* ------ Media Queries ------ */
 
 @media (max-width: 360px) {
@@ -197,6 +283,7 @@
     .top-right a i {
         transition: none;
     }
+
     .top-right {
         visibility: hidden;
     }
@@ -248,6 +335,7 @@
     .wrapper-title {
         font-size: 2rem;
     }
+
     .wrapper-sub-title {
         font-size: 1rem;
     }
