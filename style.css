@@ -47,13 +47,17 @@
 }
 
 /* ------ Quote Scroling ------ */
+.quotes-height {
+    height: 20px;
+}
+
 .quote-font-styling {
     font-size: small;
     font-weight: 600;
     white-space: nowrap;
 }
 
-.infinite-quote-scrolling {
+/* .infinite-quote-scrolling {
     transform: translateX(0px);
     animation: linear 25s infinite none quote-scrolling;
 }
@@ -66,7 +70,7 @@
     100% {
         transform: translateX(-90%);
     }
-}
+} */
 
 /* ------ Navbar Section ------ */
 
@@ -214,10 +218,6 @@
     flex-wrap: wrap;
 }
 
-.quotes-height {
-    height: 20px;
-}
-
 .scroller[data-animated="true"] {
     overflow: hidden;
     -webkit-mask: linear-gradient(90deg,
@@ -232,6 +232,10 @@
     width: max-content;
     flex-wrap: nowrap;
     animation: scroll var(--_animation-duration, 40s) var(--_animation-direction, forwards) linear infinite;
+}
+
+.scroller[data-animated="true"] .scroller__inner:hover {
+    animation: scroll var(--_animation-duration, 40s) var(--_animation-direction, forwards) linear infinite paused;
 }
 
 .scroller[data-direction="right"] {
