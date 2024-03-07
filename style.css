@@ -74,6 +74,10 @@
 
 /* ------ Navbar Section ------ */
 
+.navbar {
+    background: #fff;
+}
+
 .wca-nav-logo {
     height: 4rem;
 }
